@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_top">
+        <item
+            android:id="@+id/groups"
+            android:icon="@drawable/group_white"
+            android:title="Groups"
+            />
+        <item
+            android:id="@+id/clubs"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Clubs"
+            style="@style/TextColor"/>
+        <item
+            android:id="@+id/events"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Events"
+            style="@style/TextColor"/>
+    </group>
+
+    <group android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+    <group android:id="@+id/menu_middle"
+        android:checkableBehavior="single">
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/aboutus"
+                android:title="About Us" />
+    </group>
+
+</menu>

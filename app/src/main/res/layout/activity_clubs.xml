@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClubsActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/clubs_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageButton
+            android:id="@+id/clubs_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp"
+            android:background="@color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/club_toolbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="50dp"
+            android:textStyle="bold"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    <!--<ScrollView-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--android:layout_below="@+id/clubs_toolbar"-->
+        <!--android:scrollbars="none"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--&gt;-->
+
+
+
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/imageView2"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginStart="5dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginEnd="5dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:src="@drawable/bbh"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:adjustViewBounds="true"/>&ndash;&gt;-->
+
+            <!--<com.github.chrisbanes.photoview.PhotoView-->
+                <!--android:id="@+id/photo_view"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:layout_marginEnd="10dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:contentDescription="Image"-->
+                <!--/>-->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/club_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clubs_toolbar"
+        android:background="@color/header"
+        app:tabTextColor="@android:color/white">
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/club_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/club_tab_layout"
+        android:fillViewport="true"
+        android:padding="10dp" />
+
+
+    <!--<TextView-->
+                <!--android:layout_below="@+id/photo_view"-->
+                <!--android:id="@+id/club_service_heading"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Club Service On :"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_marginStart="5dp"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:textAlignment="textStart"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/club_service_info"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toEndOf="@+id/club_service_heading"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="Unity"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_marginStart="5dp"-->
+                <!--android:layout_below="@+id/photo_view"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/description_heading"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Description :"-->
+                <!--android:layout_marginStart="5dp"-->
+                <!--android:textAlignment="textStart"-->
+                <!--android:textSize="18sp"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_below="@+id/club_service_info"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/description_info"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:text="You must need to install Android Studio IDE (Integrated Development Environment) in order to practically continue this video series. You can find the installation instructions here:If you have any kind of suggestions or recommendation, feel free to let me know.Ask your doubts in the comment section below to that corresponding video and I will be answering each one of you!"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_below="@id/description_heading"-->
+                <!--android:layout_marginStart="5dp"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/date_time_heading"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Date and Time :"-->
+                <!--android:textAlignment="textStart"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_marginStart="5dp"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_below="@+id/description_info"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/date_info"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toEndOf="@+id/date_time_heading"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="22/03/2019"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_below="@id/description_info"-->
+                <!--android:layout_marginStart="5dp"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/time_info"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toEndOf="@+id/date_info"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="17:45"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_below="@id/description_info"-->
+                <!--android:layout_marginStart="10dp"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/venue_heading"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="Venue :"-->
+                <!--android:layout_marginStart="5dp"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_below="@id/date_info" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/venue_info"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toEndOf="@+id/venue_heading"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="Tilak Hall"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_below="@id/date_info"-->
+                <!--android:layout_marginStart="5dp"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/contact_heading"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="Contact :"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_marginStart="5dp"-->
+                <!--android:layout_below="@id/venue_info" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/contact_info"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toEndOf="@+id/contact_heading"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="7843098816"-->
+                <!--android:autoLink="phone"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_below="@id/venue_info"-->
+                <!--android:layout_marginStart="5dp"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/website_heading"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="Website :"-->
+                <!--android:layout_marginStart="5dp"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_below="@id/contact_info" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/website_info"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toEndOf="@+id/website_heading"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="www.google.com"-->
+                <!--android:autoLink="web"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_below="@id/contact_info"-->
+                <!--android:layout_marginStart="5dp"/>-->
+
+
+    <!--</ScrollView>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClubVenueFragment"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/club_venue_date_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="25/04/2019"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:id="@+id/club_venue_date_edit_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/colorAccent"
+        android:background="@color/transparent"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/club_venue_time_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="17:45"
+        android:layout_below="@+id/club_venue_date_text_view"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:id="@+id/club_venue_time_edit_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/club_venue_date_edit_text_view"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/colorAccent"
+        android:background="@color/transparent"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/club_venue_room_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/club_venue_time_text_view"
+        android:text="Room No 21"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:id="@+id/club_venue_room_edit_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/club_venue_time_edit_text_view"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/colorAccent"
+        android:background="@color/transparent"
+        android:visibility="invisible"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/clubs_venue_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/edit"
+            android:visibility="invisible"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/clubs_venue_submit_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/doneimage"
+            android:visibility="invisible"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

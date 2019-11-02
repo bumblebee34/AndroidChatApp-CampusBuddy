@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClubsFragment"
+    android:background="@color/colorPrimaryDark">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/clubs_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/club_fragment_text_clubs"/>
+
+    <TextView
+        android:id="@+id/club_fragment_text_clubs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clubs"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:padding="10dp"/>
+
+</RelativeLayout>

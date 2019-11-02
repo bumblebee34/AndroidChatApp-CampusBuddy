@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContentSelectionFragment"
+    android:background="@drawable/add_img">
+
+        <ImageButton
+            android:id="@+id/add_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/imageicon"
+            android:background="@color/transparent"
+            android:layout_margin = "10dp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_image_button"
+            android:text="Image"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="10dp"
+            android:paddingLeft="20dp"/>
+
+        <ImageButton
+            android:layout_toEndOf="@+id/add_image_button"
+            android:id="@+id/add_pdf_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pdficon"
+            android:layout_marginStart="10dp"
+            android:background="@color/transparent"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_pdf_button"
+            android:text="PDF"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:padding="2dp"
+            android:layout_toEndOf="@+id/add_image_button"
+            android:layout_marginStart="16dp"/>
+
+        <ImageButton
+            android:layout_toEndOf="@+id/add_pdf_button"
+            android:id="@+id/add_ppt_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pptxicon"
+            android:layout_marginStart="10dp"
+            android:background="@color/transparent"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_ppt_button"
+            android:text="PPT"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:padding="2dp"
+            android:layout_toEndOf="@+id/add_pdf_button"
+            android:layout_marginStart="16dp"/>
+
+        <ImageButton
+            android:layout_toEndOf="@+id/add_ppt_button"
+            android:id="@+id/add_word_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/docicon"
+            android:layout_marginStart="10dp"
+            android:background="@color/transparent"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_ppt_button"
+            android:text="DOC"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:padding="2dp"
+            android:layout_toEndOf="@+id/add_ppt_button"
+            android:layout_marginStart="16dp"/>
+
+        <ImageButton
+            android:layout_toEndOf="@+id/add_word_button"
+            android:id="@+id/add_text_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/texticon"
+            android:layout_marginStart="10dp"
+            android:background="@color/transparent"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_ppt_button"
+            android:text="TEXT"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:padding="2dp"
+            android:layout_toEndOf="@+id/add_word_button"
+            android:layout_marginStart="16dp"/>
+
+</RelativeLayout>

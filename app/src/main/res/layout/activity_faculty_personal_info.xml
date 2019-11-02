@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="16dp"
+    tools:context=".FacultyPersonalInfoActivity">
+
+    <TextView
+        android:id="@+id/personal_info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Info"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/user_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/personal_info_text"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Name"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/faculty_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/et_bg"
+            android:inputType="textEmailAddress"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_prn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/user_name_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Main Subject"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/faculty_subject"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/et_bg"
+            android:fontFamily="sans-serif-light"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_class_selection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/user_prn_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Branch"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/faculty_branch_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text_selection"
+            android:background="@drawable/et_bg"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/user_class_selection_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Add Profile Image"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/faculty_add_profile_image_button"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/btn_bg"
+            android:src="@drawable/camera"
+            android:layout_marginTop="5dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/faculty_user_info_submit_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:layout_below="@+id/user_image_layout"
+        android:layout_marginTop="40dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

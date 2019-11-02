@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "389578300467",
+    "firebase_url": "https://bhagyarajapplication.firebaseio.com",
+    "project_id": "bhagyarajapplication",
+    "storage_bucket": "bhagyarajapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389578300467:android:3ea04b47edcb12ff",
+        "android_client_info": {
+          "package_name": "com.example.bhagyarajapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389578300467-eng4oo91pt2p011nkh1gc2qjl4shi4ue.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bhagyarajapplication",
+            "certificate_hash": "214663102284ccaf59c2782eea628792445380e4"
+          }
+        },
+        {
+          "client_id": "389578300467-ib5tv6e38gc5keh2kv3hk8tdb5ntdd3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBruS9J4gHHKimLx0wB4oIwdLh0aMfCNdU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389578300467-ib5tv6e38gc5keh2kv3hk8tdb5ntdd3d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

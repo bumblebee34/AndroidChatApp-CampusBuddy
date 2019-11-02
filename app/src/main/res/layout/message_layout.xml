@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/message_background"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical"
+    android:maxWidth="375dp">
+
+    <RelativeLayout
+        android:id="@+id/text_message_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/message_text_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            android:text="Name"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            />
+
+        <TextView
+            android:id="@+id/message_text_layout"
+            android:layout_below="@+id/message_text_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:textSize="18sp"
+            android:text="Receiver Message"
+            android:textColor="@color/colorAccent"
+            />
+
+        <TextView
+            android:id="@+id/message_date_and_time"
+            android:layout_below="@+id/message_text_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="12sp"
+            android:text="18 Apr,2018 4:59 pm"
+            android:textColor="@color/colorAccent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/image_message_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/group_chat_image_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            android:text="Name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/group_chat_image_view_abc"
+            android:layout_below="@+id/group_chat_image_sender"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/image_view_background"
+            android:scaleType="fitXY"
+            android:src="@drawable/bbh"
+            />
+
+        <TextView
+            android:id="@+id/image_message_date_and_time"
+            android:layout_below="@+id/group_chat_image_view_abc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="12sp"
+            android:text="18 Apr,2018 4:59 pm"
+            android:textColor="@color/colorAccent"
+            android:layout_marginRight="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pdf_message_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/pdf_sender_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            android:text="Name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pdf_card_view"
+            android:layout_below="@+id/pdf_sender_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="4dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/colorPrimaryDark"
+                >
+
+                <TextView
+                    android:id="@+id/pdf_name_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PDF Name"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:maxWidth="250dp"/>
+
+                <ImageButton
+                    android:id="@+id/pdf_download_button"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/pdf_name_text_view"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_file_download_black_24dp"
+                    android:background="@color/transparent"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/pdf_message_date_and_time"
+            android:layout_below="@+id/pdf_card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:text="18 Apr,2018 4:59 pm"
+            android:textColor="@color/colorAccent" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

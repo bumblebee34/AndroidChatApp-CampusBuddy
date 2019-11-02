@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/login_email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/login_text"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="User Email"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/user_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/et_bg"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/login_email_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Password"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/user_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/et_bg"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/user_login_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_below="@+id/login_password_layout"
+        android:layout_marginTop="40dp"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/sign_up_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textAllCaps="true"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/forgot_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_alignParentEnd="true"
+        android:textAllCaps="true"
+        android:padding="10dp"/>
+
+</RelativeLayout>

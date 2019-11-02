@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B00020</color>
+    <color name="colorPrimaryDark">#121212</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="partion">#10ffffff</color>
+    <color name="secondary">#B00020</color>
+    <color name="foreground">#08ffffff</color>
+    <color name="header">#08ffffff</color>
+</resources>
