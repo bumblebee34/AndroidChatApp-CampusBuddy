@@ -1,4 +1,6 @@
-CampusBuddy is a chat application for intra college level.It is feature driven android application with lots of features which you cant find in other chat apps lik whats app.The list of features are as below:
+# AndroidChatApp CampusBuddy
+
+CampusBuddyis a chat application for intra college level.It is feature driven android application with lots of features which you cant find in other chat apps lik whats app.The list of features are as below:
 
 1.  In this app the admin can create groups for each class such as Third Year Information Technology. And all the users who are studying in Third Year Information Technology will automatically get added in to this groups. And faculty from whole Information Technology will get added.Only the faculty can send messages to the groups.
 
