@@ -12,3 +12,4 @@ CampusBuddyis a chat application for intra college level.It is feature driven an
 
 So at the last you can make changes according to your college needs.
 Thank you.
+Prajyot
